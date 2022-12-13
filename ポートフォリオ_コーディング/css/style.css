@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4D4D4D;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ファーストビュー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.header > img {
+    width: 10%;
+    object-fit: contain;
+    padding-left: 1.177%;
+    padding-top: 6px;
+
+}
+
+.header_menu {
+    display: flex;
+}
+.header_menu li {
+    padding-left: 45px;
+    width: 75.71px;
+    padding-top: 37.44px;
+}
+.header_menu li:last-child {
+    width: 98.81px;
+}
+
+.first_view_all {
+    display: flex;
+    justify-content:space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.catch_copy {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4.06%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.catch_copy > img {
+    width: 454.99px;
+    padding-top: 290px;
+}
+
+
+.skmt {
+    padding-top: 45%;
+    margin-left: -27%;
+    width: 285.69px;
+}
+.first_view_all > img {
+    width: 1024.03px;
+}
+.beginning_word {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.beginning_word p {
+font-size: 20px;
+font-family: Yu Gothic;
+font-weight: bold;
+padding-top: 16%;
+font-feature-settings: "palt";
+text-align: center;
+line-height: 2.75em;
+position: relative;
+left: -285px
+}
+.line img {
+    padding-left: 15.57%;
+    position: absolute;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.works {
+width: 416px;
+object-fit: cover;
+}
