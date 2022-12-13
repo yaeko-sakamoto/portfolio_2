@@ -73,7 +73,7 @@ img {
     padding-top: 37.44px;
 }
 .header_menu li:last-child {
-    width: 98.81px;
+    width: 140px;
 }
 
 .first_view_all {
@@ -92,17 +92,20 @@ img {
 
 .catch_copy > img {
     width: 454.99px;
-    padding-top: 290px;
+    padding-top: 407px;
 }
 
 
 .skmt {
     padding-top: 45%;
-    margin-left: -27%;
+    margin-left: -24%;
     width: 285.69px;
+    padding-right: 25px;
 }
 .first_view_all > img {
     width: 1024.03px;
+    margin-left: -100px;
+    
 }
 .beginning_word {
     display: flex;
@@ -114,26 +117,112 @@ img {
 font-size: 20px;
 font-family: Yu Gothic;
 font-weight: bold;
-padding-top: 16%;
+padding-top: 18.5%;
 font-feature-settings: "palt";
 text-align: center;
 line-height: 2.75em;
 position: relative;
-left: -285px
+left: -318px
 }
 .line img {
-    padding-left: 15.57%;
+    padding-left: 17.5%;
     position: absolute;
     max-width: 1366px;
     margin: 0 auto;
+    padding-top: 30px;
 }
-.menu {
+
+.works {
     display: flex;
     justify-content: space-between;
     max-width: 1366px;
     margin: 0 auto;
 }
-.works {
-width: 416px;
-object-fit: cover;
+.works > img {
+    width: 416.98px;
+    padding-left: 15.1%;
+    padding-top: 84px;
+}
+.works_btn {
+    padding-right: 13.94%;
+    padding-top: 200px;
+}
+.works_btn p {
+    font-size: 17px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.about > img {
+    width: 413.98px;
+    padding-left: 15.1%;
+    margin-top: -58px;
+}
+.about_btn {
+    padding-right: 20.94%;
+    padding-top: 63px;
+}
+.about_btn p {
+    font-size: 17px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.contact > img {
+    width: 414.98px;
+    padding-left: 15.1%;
+    margin-top: -22px;
+}
+.contact_btn {
+    padding-right: 20.94%;
+    padding-top: 74px;
+}
+.contact_btn p {
+    font-size: 17px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.since {
+    padding-left: 10px;
+}
+footer {
+    background-color: #f9d6e2;
+    height: 54.41px;
+    max-width: 2000px;
+    margin-top: 100px;
+}
+
+footer p {
+    font-size: 18px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 17.05px;
+}
+.top_btn {
+    position: fixed;
+    bottom: 77px;
+    right: 82.64px;
+    width: 30.69px;
 }
