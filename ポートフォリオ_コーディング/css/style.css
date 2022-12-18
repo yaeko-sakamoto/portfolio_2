@@ -117,19 +117,17 @@ img {
 font-size: 20px;
 font-family: Yu Gothic;
 font-weight: bold;
-padding-top: 18.5%;
+padding-top: 23.5%;
 font-feature-settings: "palt";
 text-align: center;
 line-height: 2.75em;
 position: relative;
-left: -318px
+left: -314px
 }
 .line img {
-    padding-left: 17.5%;
+    padding-left: 269px;
     position: absolute;
-    max-width: 1366px;
-    margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 101px;
 }
 
 .works {
@@ -139,18 +137,19 @@ left: -318px
     margin: 0 auto;
 }
 .works > img {
-    width: 416.98px;
-    padding-left: 15.1%;
-    padding-top: 84px;
+    width: 31%;
+    padding-left: 17.1%;
+    padding-top: 91px;
 }
 .works_btn {
     padding-right: 13.94%;
-    padding-top: 200px;
+    padding-top: 215px;
 }
 .works_btn p {
     font-size: 17px;
     font-family: Yu Gothic;
     font-weight: bold;
+    line-height: 27px;
 
 }
 .about {
@@ -161,18 +160,19 @@ left: -318px
 }
 
 .about > img {
-    width: 413.98px;
-    padding-left: 15.1%;
-    margin-top: -58px;
+    width: 32%;
+    padding-left: 17.1%;
+    margin-top: -91px;
 }
 .about_btn {
     padding-right: 20.94%;
-    padding-top: 63px;
+    padding-top: 42px;
 }
 .about_btn p {
     font-size: 17px;
     font-family: Yu Gothic;
     font-weight: bold;
+    line-height: 27px;
 
 }
 .contact {
@@ -183,18 +183,19 @@ left: -318px
 }
 
 .contact > img {
-    width: 414.98px;
-    padding-left: 15.1%;
-    margin-top: -22px;
+    width: 33%;
+    padding-left: 17.1%;
+    margin-top: -63px;
 }
 .contact_btn {
     padding-right: 20.94%;
-    padding-top: 74px;
+    padding-top: 47px;
 }
 .contact_btn p {
     font-size: 17px;
     font-family: Yu Gothic;
     font-weight: bold;
+    line-height: 27px;
 
 }
 html {
@@ -225,4 +226,88 @@ footer p {
     bottom: 77px;
     right: 82.64px;
     width: 30.69px;
+}
+.arrows_all > p {
+    font-size: 28px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+    padding-left: 20.53%;
+    margin-top: -230px;
+
+}
+.cp_arrows *, .cp_arrows *:before, .cp_arrows *:after {
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cp_arrows {
+	position: relative;
+	display: flex;
+	height: 300px;/*画面いっぱいにする場合100vh*/
+	margin: -3em auto;
+	justify-content: center;
+	align-items: center;
+}
+.cp_arrows .cp_arrow {
+	position: absolute;
+	top: 25%;/*着地点（サンプルは[class:cp_arrows]height300pxの50%）*/
+	left: 22%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	opacity: 0;
+}
+.cp_arrows .cp_arrowfirst {
+	-webkit-animation: arrow-move08 2s ease-in-out infinite;
+	animation: arrow-move08 2s ease-in-out infinite;
+}
+.cp_arrows .cp_arrowsecond {
+	-webkit-animation: arrow-move08 2s 1s ease-in-out infinite;
+	animation: arrow-move08 2s 1s ease-in-out infinite;
+}
+.cp_arrows .cp_arrow:before, .cp_arrows .cp_arrow:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 30px;
+	height: 3px;
+	content: '';
+	background: #E91E63;
+}
+.cp_arrows .cp_arrow:before {
+	-webkit-transform: rotate(30deg) translateX(-39%);
+	transform: rotate(30deg) translateX(-39%);
+	-webkit-transform-origin: top left;
+	transform-origin: top left;
+}
+.cp_arrows .cp_arrow:after {
+	-webkit-transform: rotate(-30deg) translateX(39%);
+	transform: rotate(-30deg) translateX(39%);
+	-webkit-transform-origin: top right;
+	transform-origin: top right;
+}
+@-webkit-keyframes arrow-move08 {
+	0% {
+		top: 40%;/*スタート地点（サンプルは[class:cp_arrows]height300pxの35%）*/
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes arrow-move08 {
+	0% {
+		top: 40%;/*スタート地点（サンプルは[class:cp_arrows]height300pxの35%）*/
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
