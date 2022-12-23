@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4D4D4D;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ファーストビュー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.header > img {
+    width: 10%;
+    object-fit: contain;
+    padding-left: 1.177%;
+    padding-top: 6px;
+
+}
+
+.header_menu {
+    display: flex;
+}
+.header_menu li {
+	display: inline-block;
+	padding: 0.3em;
+	color: #f9d6e2;
+    padding-left: 45px;
+    width: 75.71px;
+    padding-top: 37.44px;
+}
+
+.header_menu li:hover {
+	animation: zoom .3s;
+}
+@keyframes zoom {
+	50% {
+		transform: scale(1.05);
+	}
+}
+.header_menu li:last-child {
+    width: 103px;
+    margin-right: 60px;
+}
+.title {
+    padding-left: 6.82%;
+    padding-top: 80px;
+    width: 50%;
+}
+.hr {
+    border-bottom: 3px solid #b3b3b3;
+    margin-top: 63px;
+}
+.profile > img {
+    width: 50%;
+    padding-top: 152px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    max-width: 1366px;
+}
+.my_name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    padding-top: 220px;
+}
+.my_name > rt {
+    font-size: 30px;
+    font-weight: bold;
+}
+.my_name > ruby {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.me {
+    display: flex;
+    align-items: center;
+    padding-top: 90.34px;
+    padding-bottom: 55.73px;
+    padding-left: 10.5%;
+}
+.me > h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.me > p {
+    font-size: 20px;
+    padding-left: 1.54%;
+    color: #4d4d4d;
+}
+.self_introduction {
+    font-size: 18px;
+    line-height: 3.6em;
+    font-feature-settings: "palt";
+    padding: 0 10.5%;
+    font-weight: bold;
+}
+.Instagram {
+    padding-top: 145.41px;
+    margin-left: 43.9%;
+    max-width: 1366px;
+    width: 15%;
+    padding-bottom: 81.88px;
+}
+.Instagram,.Instagram span {
+	display: inline-block;
+}
+.Instagram span {
+	transition: .5s;
+}
+.Instagram:hover span {
+	transform: rotateX(360deg);
+}
+.skill {
+    display: flex;
+    align-items: center;
+    padding-top: 90.34px;
+    padding-bottom: 55.73px;
+    padding-left: 10.5%;
+}
+.skill > h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.skill > p {
+    font-size: 20px;
+    padding-left: 1.54%;
+    color: #4d4d4d;
+}
+.skill_name {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10.5%;
+
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.since {
+    padding-left: 10px;
+}
+footer {
+    background-color: #f9d6e2;
+    height: 54.41px;
+    max-width: 2000px;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    margin-top: 200px;
+}
+
+footer p {
+    font-size: 18px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 17.05px;
+}
+.top_btn {
+    position: fixed;
+    bottom: 77px;
+    right: 33.64px;
+    width: 30.69px;
+    
+}

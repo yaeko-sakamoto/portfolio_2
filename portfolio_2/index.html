@@ -6,23 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>works_実績</title>
 </head>
 
 <body>
     <section>
         <div class="header">
-            <img src="images/ポートフォリオ_素材2/logo_2.png" alt="logo">
+            <img src="images/portfolio_folder/logo_2.png" alt="logo">
             <ul class="header_menu">
-                <li><img src="images/ポートフォリオ_素材2/AI/works.png" alt=""></li>
-                <li><img src="images/ポートフォリオ_素材2/AI/about.png" alt=""></li>
-                <li><img src="images/ポートフォリオ_素材2/AI/contact.png" alt=""></li>
+                <li><a href=""><img src="images/portfolio_folder/works.png" alt=""></a></li>
+                <li><a href=""><img src="images/portfolio_folder/about.png" alt=""></a></li>
+                <li><a href=""><img src="images/portfolio_folder/contact.png" alt=""></a></li>
             </ul>
         </div>
 
-        <img class="title" src="images/ポートフォリオ_素材2/AI/実績.png" alt="">
+        <img class="title" src="images/portfolio_folder/works_all.png" alt="">
     </section>
-
+    <!-- タブ -->
     <section>
         <div class="cp_tab">
             <input type="radio" name="cp_tab" id="tab5_1" checked>
@@ -35,25 +36,27 @@
             <label for="tab5_4">名刺、チラシ</label>
             <input type="radio" name="cp_tab" id="tab5_5">
             <label for="tab5_5">リッチメニュー</label>
+            <hr class="border">
+            <!-- 実績一覧 -->
             <div class="cp_tabpanels">
                 <div class="cp_tabpanel">
                     <div class="performance_banner">
-                        <img src="images/ポートフォリオ_素材2/1.jpg" alt="バナー1">
-                        <img src="images/ポートフォリオ_素材2/2.jpg" alt="バナー2">
-                        <img src="images/ポートフォリオ_素材2/3.jpg" alt="バナー3">
-                        <img src="images/ポートフォリオ_素材2/4.jpg" alt="バナー4">
-                        <img src="images/ポートフォリオ_素材2/5.jpg" alt="バナー5">
-                        <img src="images/ポートフォリオ_素材2/6.jpg" alt="バナー6">
+                        <img src="images/portfolio_folder/1.jpg" alt="バナー1">
+                        <img src="images/portfolio_folder/2.jpg" alt="バナー2">
+                        <img src="images/portfolio_folder/3.jpg" alt="バナー3">
+                        <img src="images/portfolio_folder/4.jpg" alt="バナー4">
+                        <img src="images/portfolio_folder/5.jpg" alt="バナー5">
+                        <img src="images/portfolio_folder/6.jpg" alt="バナー6">
                     </div>
                 </div>
                 <div class="cp_tabpanel">
-                    <img src="images/ポートフォリオ_素材2/9.jpg" alt="ホームページ1">
-                    <img src="images/ポートフォリオ_素材2/7.jpg" alt="ホームページ2">
-                    <img src="images/ポートフォリオ_素材2/8.jpg" alt="ホームページ3">
+                    <img src="images/portfolio_folder/9.jpg" alt="ホームページ1">
+                    <img src="images/portfolio_folder/7.jpg" alt="ホームページ2">
+                    <img src="images/portfolio_folder/8.jpg" alt="ホームページ3">
                 </div>
                 <div class="cp_tabpanel">
-                    <img src="images/ポートフォリオ_素材2/10.jpg" alt="ロゴ1">
-                    <img src="images/ポートフォリオ_素材2/11.jpg" alt="ロゴ2">
+                    <img src="images/portfolio_folder/10.jpg" alt="ロゴ1">
+                    <img src="images/portfolio_folder/11.jpg" alt="ロゴ2">
                 </div>
                 <div class="cp_tabpanel">
                     <h2>Coming soon…</h2>
@@ -62,13 +65,32 @@
                     <h2>Coming soon…</h2>
                 </div>
             </div>
+            <footer>
+                <p>@skmt_design<span class="since">since.2022</span></p>
+            </footer>
         </div>
-    </section>
 
-    <a href="#"><img class="top_btn" src="images/ポートフォリオ_素材2/AI/アセット 5.png" alt=""></a>
-    <footer>
-        <p>@skmt_design<span class="since">since.2022</span></p>
-    </footer>
+    </section>
+    <!-- TOPボタン -->
+    <script>jQuery(function () {
+            var pagetop = $('.top_btn');
+            pagetop.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500); //0.5秒かけてトップへ移動
+                return false;
+            });
+        });</script>
+    <a href="#"><img class="top_btn" src="images/portfolio_folder/top_btn.png" alt=""></a>
+
 </body>
 
 </html>

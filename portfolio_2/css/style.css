@@ -67,16 +67,41 @@ img {
 .header_menu {
     display: flex;
 }
+
+.header_menu li:last-child {
+    width: 103px;
+    padding-right: 60px;
+}
 .header_menu li {
+	display: inline-block;
+	padding: 0.3em;
+	color: #f9d6e2;
     padding-left: 45px;
     width: 75.71px;
     padding-top: 37.44px;
 }
-.header_menu li:last-child {
-    width: 140px;
+
+.header_menu li:hover {
+	animation: zoom .3s;
+}
+@keyframes zoom {
+	50% {
+		transform: scale(1.05);
+	}
 }
 
+.header_menu li {
+	display: inline-block;
+	padding: 0.3em;
+	color: #f9d6e2;
+    padding-left: 45px;
+    width: 75.71px;
+    padding-top: 37.44px;
+}
 
+.header_menu li:hover {
+	animation: zoom .3s;
+}
 /* タブメニュー */
 .cp_tab *, .cp_tab *:before, .cp_tab *:after {
 	-webkit-box-sizing: border-box;
@@ -103,7 +128,7 @@ img {
 	display: block;
 	float: left;
 	margin-right: 5px;
-	padding: 12px 20px;
+	padding: 17px 50px;
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
@@ -127,8 +152,12 @@ img {
 	transform: rotateX(-20deg);
 	transform-origin: top center;
 	opacity: 0;
-	border-top: 3px solid #B3B3B3;
 }
+.border {
+    border-top: 3px solid #B3B3B3;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+} 
 .cp_tab #tab5_1:checked ~ .cp_tabpanels .cp_tabpanel:nth-of-type(1),
 .cp_tab #tab5_2:checked ~ .cp_tabpanels .cp_tabpanel:nth-of-type(2),
 .cp_tab #tab5_3:checked ~ .cp_tabpanels .cp_tabpanel:nth-of-type(3),
@@ -137,11 +166,15 @@ img {
 	z-index: 1;
 	transform: rotateX(0);
 	opacity: 1;
+    position: relative;
+}
+.cp_tabpanels {
+    overflow: hidden;
 }
 
 .cp_tab {
     padding-top: 81.88px;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Yu Gothic;
     font-weight: bold;
     max-width: 1366px;
@@ -150,6 +183,7 @@ img {
 .title {
     padding-left: 6.82%;
     padding-top: 80px;
+    width: 40%;
 }
 .performance_banner {
 display: flex;
@@ -192,7 +226,9 @@ footer {
     background-color: #f9d6e2;
     height: 54.41px;
     max-width: 2000px;
-    margin-top: 170%;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    margin-top: 200px;
 }
 
 footer p {
@@ -206,6 +242,8 @@ footer p {
 .top_btn {
     position: fixed;
     bottom: 77px;
-    right: 82.64px;
+    right: 33.64px;
     width: 30.69px;
+    
 }
+

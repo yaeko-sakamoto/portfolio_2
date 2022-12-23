@@ -1,0 +1,446 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4D4D4D;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+.load_area {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    background: #fff;
+    text-align: center;
+    color: #fff;
+}
+.load_area > img {
+    width: 485px;
+    height: 306px;
+    object-fit: contain;
+    padding-top: 10%;
+}
+
+.cp_loading12 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+    padding-top: 15%;
+}
+.cp_loading12 .cp_item {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	-webkit-animation: loading12 1.8s infinite cubic-bezier(.51,.35,.71,.55);
+	animation: loading12 1.8s infinite cubic-bezier(.51,.35,.71,.55);
+	opacity: 0.3;
+	border-radius: 50%;
+}
+.cp_loading12 .cp_item:nth-child(1) {
+	background: #E91E63;
+}
+.cp_loading12 .cp_item:nth-child(2) {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+	background: #E91E63;
+}
+.cp_loading12 .cp_item:nth-child(3) {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+	background: #673AB7;
+}
+.cp_loading12 .cp_item:nth-child(4) {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+	background: #03A9F4;
+}
+.cp_loading12 .cp_item:nth-child(5) {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+	background: #4CAF50;
+}
+@-webkit-keyframes loading12 {
+	0% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	35% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+		opacity: 0.3;
+		filter: alpha(opacity=30);
+	}
+	50% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+	}
+	70% {
+		-webkit-transform: translateY(3px);
+		transform: translateY(3px);
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+	}
+	85% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+}
+@keyframes loading12 {
+	0% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	35% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+		opacity: 0.3;
+		filter: alpha(opacity=30);
+	}
+	50% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+	}
+	70% {
+		-webkit-transform: translateY(3px);
+		transform: translateY(3px);
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+	}
+	85% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+}
+
+/* ファーストビュー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.header > img {
+    width: 10%;
+    object-fit: contain;
+    padding-left: 1.177%;
+    padding-top: 6px;
+
+}
+
+.header_menu {
+    display: flex;
+}
+
+.header_menu li:last-child {
+    width: 103px;
+    margin-right: 60px;
+}
+.header_menu li {
+	display: inline-block;
+	padding: 0.3em;
+	color: #f9d6e2;
+    padding-left: 45px;
+    width: 75.71px;
+    padding-top: 37.44px;
+}
+
+.header_menu li:hover {
+	animation: zoom .3s;
+}
+@keyframes zoom {
+	50% {
+		transform: scale(1.05);
+	}
+}
+.first_view_all {
+    display: flex;
+    justify-content:space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.first_view_all > img {
+    width: 90%;
+    margin: 0 auto;
+}
+.wrap {
+    position: relative;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.beginning_word p {
+font-size: 20px;
+font-family: Yu Gothic;
+font-weight: bold;
+padding-top: 23.5%;
+font-feature-settings: "palt";
+text-align: center;
+line-height: 2.75em;
+}
+.line img {
+    left: 160px;
+    position: absolute;
+    z-index: -1;
+    width: 46%;
+}
+
+.works {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.works > img {
+    width: 32%;
+    padding-left: 14.2%;
+    padding-top: 91px;
+    object-fit: contain;
+}
+.works_btn img {
+    padding-top: 215px;
+    width: 50%;
+	display: inline-block;
+}
+.works_btn img:hover {
+	animation: zoom .3s;
+}
+@keyframes zoom {
+	50% {
+		transform: scale(1.05);
+	}
+}
+.works_btn p {
+    font-size: 17px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+    line-height: 27px;
+
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.about > img {
+    width: 32%;
+    padding-left: 15%;
+    object-fit: contain;
+}
+.about_btn img {
+    padding-top: 115px;
+    width: 50%;
+    display: inline-block;
+}
+.about_btn img:hover {
+	animation: zoom .3s;
+}
+@keyframes zoom {
+	50% {
+		transform: scale(1.05);
+	}
+}
+.about_btn p {
+    font-size: 17px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+    line-height: 27px;
+
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.contact > img {
+    width: 32%;
+    padding-left: 14%;
+    padding-top: 41px;
+    object-fit: contain;
+}
+.contact_btn img {
+    padding-top: 123px;
+    width: 50%;
+    display: inline-block;
+}
+.contact_btn img:hover {
+	animation: zoom .3s;
+}
+@keyframes zoom {
+	50% {
+		transform: scale(1.05);
+	}
+}
+.contact_btn p {
+    font-size: 17px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+    line-height: 27px;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.since {
+    padding-left: 10px;
+}
+footer {
+    background-color: #f9d6e2;
+    height: 54.41px;
+    max-width: 2000px;
+    margin-top: 100px;
+}
+
+footer p {
+    font-size: 18px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 17.05px;
+}
+.top_btn {
+    position: fixed;
+    bottom: 77px;
+    right: 82.64px;
+    width: 30.69px;
+}
+.arrows_all > p {
+    font-size: 28px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+    padding-left: 20.53%;
+    margin-top: -230px;
+
+}
+.cp_arrows *, .cp_arrows *:before, .cp_arrows *:after {
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cp_arrows {
+	position: relative;
+	display: flex;
+	height: 300px;/*画面いっぱいにする場合100vh*/
+	margin: -3em auto;
+	justify-content: center;
+	align-items: center;
+}
+.cp_arrows .cp_arrow {
+	position: absolute;
+	top: 25%;/*着地点（サンプルは[class:cp_arrows]height300pxの50%）*/
+	left: 22%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	opacity: 0;
+}
+.cp_arrows .cp_arrowfirst {
+	-webkit-animation: arrow-move08 2s ease-in-out infinite;
+	animation: arrow-move08 2s ease-in-out infinite;
+}
+.cp_arrows .cp_arrowsecond {
+	-webkit-animation: arrow-move08 2s 1s ease-in-out infinite;
+	animation: arrow-move08 2s 1s ease-in-out infinite;
+}
+.cp_arrows .cp_arrow:before, .cp_arrows .cp_arrow:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 30px;
+	height: 3px;
+	content: '';
+	background: #E91E63;
+}
+.cp_arrows .cp_arrow:before {
+	-webkit-transform: rotate(30deg) translateX(-39%);
+	transform: rotate(30deg) translateX(-39%);
+	-webkit-transform-origin: top left;
+	transform-origin: top left;
+}
+.cp_arrows .cp_arrow:after {
+	-webkit-transform: rotate(-30deg) translateX(39%);
+	transform: rotate(-30deg) translateX(39%);
+	-webkit-transform-origin: top right;
+	transform-origin: top right;
+}
+@-webkit-keyframes arrow-move08 {
+	0% {
+		top: 40%;/*スタート地点（サンプルは[class:cp_arrows]height300pxの35%）*/
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes arrow-move08 {
+	0% {
+		top: 40%;/*スタート地点（サンプルは[class:cp_arrows]height300pxの35%）*/
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
