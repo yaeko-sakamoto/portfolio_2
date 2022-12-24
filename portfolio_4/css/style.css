@@ -133,11 +133,29 @@ textarea {
 [type="image"] {
 width: 30%;
 padding-top: 134.1px;
-padding-left: 35%;
+padding-left: 40%;
 }
-
+.name_form {
+    display: flex;
+}
+.email_form {
+    display: flex;
+}
+.text_form {
+    display: flex;
+}
+ruby {
+    width: 160px;
+    font-family: Yu Gothic;
+    font-weight: bold;
+    font-size: 18px;
+}
+body {
+    overflow: hidden;
+}
 html {
     scroll-behavior: smooth;
+    overflow: auto;
 }
 
 .since {

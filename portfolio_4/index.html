@@ -25,12 +25,25 @@
     <hr class="hr">
 
     <form>
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-        <p>
-            <input type="image" src="images/portfolio_folder/send_btn.png" alt="送信">
-        </p>
+        <div class="name_form"><ruby>
+                名前<rt>Name</rt>
+            </ruby>
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />
+        </div>
+        <div class="email_form"><ruby>
+                Eメール<rt>Email Address</rt>
+            </ruby>
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+        </div>
+        <div class="text_form">
+            <ruby>
+                お問い合わせ<rt>Message</rt>
+            </ruby>
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+        </div>
+
+        <input type="image" src="images/portfolio_folder/send_btn.png" alt="送信">
+
     </form>
 
 

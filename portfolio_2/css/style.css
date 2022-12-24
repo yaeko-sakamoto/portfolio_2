@@ -192,11 +192,6 @@ max-width: 1366px;
 margin: 0 auto;
 }
 
-.performance_banner img{
-width: 50%; 
-padding-right: 5.31%;
-padding-top: 15%; 
-}
 .cp_tabpanel {
     display: flex;
 flex-wrap: wrap;
@@ -204,9 +199,9 @@ max-width: 1366px;
 margin: 0 auto;
 }
 
-.cp_tabpanel img {
-    width: 50%; 
-    padding-right: 5.31%;
+.cp_tabpanel  img {
+    width: 100%; 
+    padding-right: 60px;
     padding-top: 15%;
 }
 

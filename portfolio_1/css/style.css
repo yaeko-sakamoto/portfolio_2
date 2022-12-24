@@ -77,8 +77,8 @@ img {
 }
 .cp_loading12 .cp_item {
 	display: inline-block;
-	width: 12px;
-	height: 12px;
+	width: 10px;
+	height: 10px;
 	-webkit-animation: loading12 1.8s infinite cubic-bezier(.51,.35,.71,.55);
 	animation: loading12 1.8s infinite cubic-bezier(.51,.35,.71,.55);
 	opacity: 0.3;
@@ -252,14 +252,7 @@ line-height: 2.75em;
     width: 50%;
 	display: inline-block;
 }
-.works_btn img:hover {
-	animation: zoom .3s;
-}
-@keyframes zoom {
-	50% {
-		transform: scale(1.05);
-	}
-}
+
 .works_btn p {
     font-size: 17px;
     font-family: Yu Gothic;
@@ -283,14 +276,6 @@ line-height: 2.75em;
     padding-top: 115px;
     width: 50%;
     display: inline-block;
-}
-.about_btn img:hover {
-	animation: zoom .3s;
-}
-@keyframes zoom {
-	50% {
-		transform: scale(1.05);
-	}
 }
 .about_btn p {
     font-size: 17px;
@@ -317,13 +302,10 @@ line-height: 2.75em;
     width: 50%;
     display: inline-block;
 }
-.contact_btn img:hover {
-	animation: zoom .3s;
-}
-@keyframes zoom {
-	50% {
-		transform: scale(1.05);
-	}
+
+.menu a:hover img {
+	transform: scale(1.05);
+	transform: 3s;
 }
 .contact_btn p {
     font-size: 17px;
