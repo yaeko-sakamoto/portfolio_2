@@ -191,7 +191,12 @@ flex-wrap: wrap;
 max-width: 1366px;
 margin: 0 auto;
 }
-
+.performance_banner a {
+    width: 50%;
+}
+.cp_tabpanel a {
+    width: 50%;
+}
 .cp_tabpanel {
     display: flex;
 flex-wrap: wrap;

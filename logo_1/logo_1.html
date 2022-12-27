@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>logo_1</title>
+</head>
+
+<!-- ヘッダー -->
+
+<body>
+    <div class="header">
+        <img src="images/portfolio_folder/logo_2.png" alt="logo">
+        <ul class="header_menu">
+            <li><a href="../portfolio_2/works.html"><img src="images/portfolio_folder/works.png" alt=""></a>
+            </li>
+            <li><a href="../portfolio_3/about.html"><img src="images/portfolio_folder/about.png" alt=""></a></li>
+            <li><a href="../portfolio_4/contact.html"><img src="images/portfolio_folder/contact.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <img class="logo_mark" src="images/portfolio_folder/logo@2x.png" alt="">
+
+    <div class="works_logo">
+        <img src="images/portfolio_folder/logo.png" alt="実績">
+    </div>
+
+
+
+    <table class="detail">
+        <tr>
+            <th>概要</th>
+            <td>鹿児島市のシンボル桜島をイメージし、円を重ねることで柔らかい印象にしました。<br>煙には「無限」を入れ色々な可能性を生み出せるようにと願いを込めました。</td>
+        </tr>
+        <tr>
+            <th>カテゴリー</th>
+            <td>ロゴマーク</td>
+        </tr>
+        <tr>
+            <th>担当範囲</th>
+            <td>ロゴ</td>
+        </tr>
+        <tr>
+            <th>使用ツール</th>
+            <td>Adobe illustrator</td>
+        </tr>
+        <tr>
+            <th>制作期間</th>
+            <td>約２週間～３週間</td>
+        </tr>
+        <tr>
+            <th>費用</th>
+            <td>15,000円~<span>※費用は案件により異なります。</span></td>
+        </tr>
+    </table>
+    <div class="contact_btn">
+        <a href="../portfolio_4/contact.html"><img src="images/portfolio_folder/contact_btn@2x.png"
+                alt="contactボタン"></a>
+    </div>
+
+    <div class="arrow_btn">
+        <a href="../portfolio_2/works.html"><img src="images/portfolio_folder/arrow@2x.png" alt="矢印">
+            <p>一覧に戻る</p>
+        </a>
+    </div>
+    <footer>
+        <p>@skmt_design<span class="since">since.2022</span></p>
+    </footer>
+
+
+    <script>
+        var start = 1;
+        var goal = 100;
+        var speed = 25;
+
+        setInterval(function () {
+            if (start <= goal) {
+                $('.load_per').html(start + '%');
+                start++;
+                var start_str = String(start);
+                var start_width = start_str + '%';
+                $('.progress-bar').css({ 'width': start_width });
+            }
+        }, speed);
+
+        setTimeout(function () {
+            $('.load_area').fadeOut(800);
+        }, 5000);
+    </script>
+    <script>jQuery(function () {
+            var pagetop = $('.top_btn');
+            pagetop.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500); //0.5秒かけてトップへ移動
+                return false;
+            });
+        });</script>
+    <a href="#"><img class="top_btn" src="images/portfolio_folder/top_btn.png" alt=""></a>
+
+</body>
+
+</html>
