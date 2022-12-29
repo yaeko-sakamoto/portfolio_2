@@ -227,11 +227,31 @@ img {
 font-size: 20px;
 font-family: Yu Gothic;
 font-weight: bold;
-padding-top: 23.5%;
+padding-top: 20%;
 font-feature-settings: "palt";
 text-align: center;
 line-height: 2.75em;
 }
+@media screen and (max-width:1215px){
+.beginning_word p {
+	padding-top: 15%;
+}
+}
+@media screen and (max-width:1100px){
+	.beginning_word p {
+		padding-top: 13%;
+	}
+	}
+	@media screen and (max-width:1080px){
+		.beginning_word p {
+			padding-top: 6%;
+		}
+		}
+		@media screen and (max-width:980px){
+			.beginning_word p {
+				padding-top: 0%;
+			}
+			}
 .line img {
     left: 160px;
     position: absolute;
