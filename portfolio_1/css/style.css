@@ -204,6 +204,7 @@ img {
 		transform: scale(1.05);
 	}
 }
+
 .first_view_all {
     display: flex;
     justify-content:space-between;
@@ -424,5 +425,62 @@ footer p {
 	}
 	100% {
 		opacity: 0;
+	}
+}
+/* スマホ */
+
+.cp_hmenuac06,
+.header_sp {
+	display: none;
+}
+/* ハンバーガーメニュー */
+@media screen and (max-width:900px) {
+	
+.header_menu {
+	display: none;
+}
+
+	.cp_hmenuac06 {
+		display: block;
+		position: absolute;
+		right: 8px;
+		top: -15px;
+		padding: 1.5em;
+		width: 40px;
+		cursor: pointer;
+	}
+	.cp_hmenuac06 > span {
+		position: relative;
+		display: block;
+		width: 40px;
+		height: 5px;
+		border-radius: 5px;
+		margin-top: 5px;
+		background: #4D4D4D;
+	}
+	.cp_hmenuac06 > span:after {
+		position: absolute;
+		width: 0%;
+		height: 100%;
+		content: '';
+		border-radius: 5px;
+		-webkit-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+		background: rgba(233,30,99 ,0.9);
+	}
+	.cp_hmenuac06 > span:nth-child(2):after {
+		-webkit-transition-delay: 0.1s;
+				transition-delay: 0.1s;
+	}
+	.cp_hmenuac06 > span:nth-child(3):after {
+		-webkit-transition-delay: 0.2s;
+				transition-delay: 0.2s;
+	}
+	.cp_hmenuac06:hover > span:after {
+		width: 100%;
+	}
+	.arrows_all p {
+		padding-left: 19%;
+	
 	}
 }

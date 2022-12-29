@@ -95,6 +95,7 @@ img {
 }
 .hr {
     border-bottom: 3px solid #b3b3b3;
+    margin-bottom: 209.9px;
 }
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
@@ -102,7 +103,6 @@ img {
 form {
     max-width:789px; 
     margin: 0 auto; 
-    padding-top: 209.9px;
 }
 
 .feedback-input {
