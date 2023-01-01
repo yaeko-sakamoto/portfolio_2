@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
     <title>hp_3</title>
 </head>
 
@@ -22,6 +23,17 @@
             <li><a href="../portfolio_4/contact.html"><img src="images/portfolio_folder/contact.png" alt=""></a>
             </li>
         </ul>
+        <div class="hum_menu"><span></span></div>
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="../portfolio_2/works.html"><img src="images/portfolio_folder/works.png" alt=""></a>
+                </li>
+                <li><a href="../portfolio_3/about.html"><img src="images/portfolio_folder/about.png" alt=""></a>
+                </li>
+                <li><a href="../portfolio_4/contact.html"><img src="images/portfolio_folder/contact.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
     </div>
     <img class="hp_logo" src="images/portfolio_folder/homepage@2x.png" alt="">
 
@@ -71,42 +83,7 @@
     </footer>
 
 
-    <script>
-        var start = 1;
-        var goal = 100;
-        var speed = 25;
 
-        setInterval(function () {
-            if (start <= goal) {
-                $('.load_per').html(start + '%');
-                start++;
-                var start_str = String(start);
-                var start_width = start_str + '%';
-                $('.progress-bar').css({ 'width': start_width });
-            }
-        }, speed);
-
-        setTimeout(function () {
-            $('.load_area').fadeOut(800);
-        }, 5000);
-    </script>
-    <script>jQuery(function () {
-            var pagetop = $('.top_btn');
-            pagetop.hide();
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
-                    pagetop.fadeIn();
-                } else {
-                    pagetop.fadeOut();
-                }
-            });
-            pagetop.click(function () {
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 500); //0.5秒かけてトップへ移動
-                return false;
-            });
-        });</script>
     <a href="#"><img class="top_btn" src="images/portfolio_folder/top_btn.png" alt=""></a>
 
 </body>
