@@ -170,6 +170,8 @@ img {
     justify-content: space-between;
     max-width: 2000px;
     margin: 0 auto;
+	position: relative;
+	z-index: 100;
 }
 .header > img {
     width: 10%;
@@ -219,6 +221,7 @@ img {
     max-width: 1366px;
     margin: 0 auto;
 	margin-top: -70px;
+	height: 100vh;
 }
 .first_view_all > img {
     width: 90%;
@@ -240,6 +243,9 @@ padding-top: 20%;
 font-feature-settings: "palt";
 text-align: center;
 line-height: 2.75em;
+}
+.sp_word p {
+	display: none;
 }
 @media screen and (max-width:1215px){
 .beginning_word p {
@@ -741,12 +747,20 @@ textarea {
 .name_form {
     display: flex;
 }
+
+.furigana {
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
 .email_form {
     display: flex;
 }
+
 .text_form {
     display: flex;
 }
+
 .submit input {
     width: 50%;
     background-color: #f9d6e2;
@@ -830,7 +844,9 @@ margin: 0 auto;
 .works_banner3 {
 	width: 100%;
 }
-
+.works_banner3 h1 {
+	text-align: center;
+}
 /* メインhp */
 
 .hp_logo {
@@ -914,7 +930,11 @@ width: 35%;
 		text-align: center;
 	}
 	.title {
-		width: auto ;
+		width: 80%;
+		padding-left: 3%;
+	}
+	.cp_tab {
+		padding-top: 10.5px;
 	}
 	.cp_tab > label {
 		float: none ;
@@ -938,6 +958,7 @@ width: 35%;
 
 	.title_about {
 		width: auto ;
+		padding-left: 3%;
 	}
 	.profile {
 		display: block ;
@@ -952,6 +973,7 @@ width: 35%;
 	}
 	.self_introduction {
 		font-size: 17px ;
+		line-height: 2em;
 	}
 	.my_name > rt {
 		font-size: 16px ;
@@ -991,6 +1013,7 @@ width: 35%;
 
 	.title_contact {
 		width: auto ;
+		padding-left: 3%;
 	}
 	.name_form  {
 		display: block ;
@@ -1044,7 +1067,7 @@ width: 35%;
 	.detail, .detail_hp2  {
 		margin-top: 95px ;
 		width: 95% ;
-		font-size: 15px ;
+		font-size: 14px ;
 	}
 	
 	.works_logo {
@@ -1065,7 +1088,11 @@ width: 35%;
 	display: none;
 }
 .header > img {
-	width: 15%;
+	width: 18%;
+}
+
+.header > a {
+	width: 18%;
 }
 .hum_menu {
 	display: block;
@@ -1153,8 +1180,8 @@ background: transparent;
 			transition: all 0.3s ease-in-out;
 	background: rgba(233,30,99 ,0.9);
 }
-.open:hover > span:after,
-.open:hover > span::before {
+.open span:after,
+.open span::before {
 	width: 100%;
 }
 
@@ -1172,7 +1199,7 @@ background: transparent;
 
 .cp_arrows .cp_arrow {
 	margin-top: 35px;
-	top: 70%;
+	top: 55%;
 	left: 76%;
 }
 
@@ -1180,6 +1207,7 @@ background: transparent;
 
 .first_view_sp {
 display: block;
+height: calc(100vh - 36px);
 }
 .first_view_all {
 	display: none;
@@ -1189,26 +1217,31 @@ display: block;
 	padding-left: 50px;
 }
 .skmt {
-	width: 203px;
-	padding-top: 44.9px;
+	width: 200px;
+	padding-top: 10vh;
 	margin: 0 auto;
 }
 .main {
 	margin: 0 auto;
+	width: 80%;
 }
 .beginning_word p {
-	margin-top: 50px;
+	margin-top: 250px;
+	display: none;
+}
+.sp_word p{
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Yu Gothic;
+	line-height: 2em;
 }
 .cp_arrows {
 	margin: 0em auto;
 	height: 80px;
-	margin-top: -80px;
+	margin-top: -115px;
 }
-.beginning_word p {
-	padding-top: 0%;
-	font-size: 13px;
-	letter-spacing: -0.8px;
-}
+
 .line img {
 	display: none;
 }
@@ -1230,7 +1263,7 @@ display: block;
 	text-align: center;
 }
 .works_btn p {
-	font-size: 15px;
+	font-size: 14.5px;
 }
 .about {
 	display: block;
@@ -1247,7 +1280,7 @@ display: block;
 	text-align: center;
 }
 .about_btn p {
-	font-size: 15px;
+	font-size: 14.5px;
 }
 .contact {
 	display: block;
@@ -1264,7 +1297,7 @@ display: block;
 	text-align: center;
 }
 .contact_btn_main p {
-	font-size: 15px;
+	font-size: 14.5px;
 }
 .top_btn {
 	right: 30px;

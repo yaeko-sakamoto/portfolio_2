@@ -33,28 +33,33 @@
                 </ul>
             </nav>
         </div>
-        <img class="title_contact" src="images/portfolio_folder/contact_all_1.png" alt="">
+        <h1><img class="title_contact" src="images/portfolio_folder/contact_all_1.png" alt="contact"></h1>
     </section>
     <hr class="hr_contact">
 
     <form
         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd56jsGnEpT1x1zbIlq5T3v0xiDyoPn4zQive22NIjyT8q8JA/formResponse"
         target="hidden_iframe" onsubmit="submitted=true;">
-        <div class="name_form"><ruby class="ruby_contact">
-                お名前<rt>Name</rt>
-            </ruby>
-            <input name="entry.1319626841" type="text" class="feedback-input" placeholder="Name" />
+        <div class="name_form">
+            <label class="ruby_contact" for="input1">
+                <p class="furigana">Name</p>
+                <p>お名前</p>
+            </label>
+            <input name="entry.1319626841" type="text" class="feedback-input" placeholder="Name" id="input1" />
         </div>
-        <div class="email_form"><ruby class="ruby_contact">
-                Eメール<rt>Email</rt>
-            </ruby>
-            <input name="entry.1059648730" type="text" class="feedback-input" placeholder="Email" />
+        <div class="email_form">
+            <label class="ruby_contact" for="input2">
+                <p class="furigana">Email</p>
+                <p>Eメール</p>
+            </label>
+            <input name="entry.1059648730" type="text" class="feedback-input" placeholder="Email" id="input2" />
         </div>
         <div class="text_form">
-            <ruby class="ruby_contact">
-                お問い合わせ<rt>Message</rt>
-            </ruby>
-            <textarea name="entry.871787002" class="feedback-input" placeholder="Comment"></textarea>
+            <label class="ruby_contact" for="input3">
+                <p class="furigana">Message</p>
+                <p> お問い合わせ</p>
+            </label>
+            <textarea name="entry.871787002" class="feedback-input" placeholder="Comment" id="input3"></textarea>
         </div>
         <div class="submit"><input type="submit" alt="送信"></div>
         <script type="text/javascript">
