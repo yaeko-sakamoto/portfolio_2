@@ -299,6 +299,9 @@ line-height: 2.75em;
     line-height: 27px;
 
 }
+.sp_description {
+	display: none;
+	}
 .about {
     display: flex;
     justify-content: space-between;
@@ -1184,7 +1187,9 @@ background: transparent;
 .open span::before {
 	width: 100%;
 }
-
+.cp_loading12 {
+	top: 65%;
+}
 	/* スクロール sp*/
 	.arrows_all p {
 		padding-left: 74.5%;
@@ -1239,7 +1244,7 @@ height: calc(100vh - 36px);
 .cp_arrows {
 	margin: 0em auto;
 	height: 80px;
-	margin-top: -115px;
+	margin-top: -18%;
 }
 
 .line img {
@@ -1263,7 +1268,15 @@ height: calc(100vh - 36px);
 	text-align: center;
 }
 .works_btn p {
-	font-size: 14px;
+	display: none;
+}
+.sp_description {
+display: block;
+font-size: 15px;
+font-weight: bold;
+font-family: Yu Gothic;
+line-height: 27px;
+text-align: center;
 }
 .about {
 	display: block;
@@ -1280,7 +1293,7 @@ height: calc(100vh - 36px);
 	text-align: center;
 }
 .about_btn p {
-	font-size: 14px;
+	font-size: 15px;
 }
 .contact {
 	display: block;
@@ -1297,7 +1310,7 @@ height: calc(100vh - 36px);
 	text-align: center;
 }
 .contact_btn_main p {
-	font-size: 14px;
+	font-size: 15px;
 }
 .top_btn {
 	right: 30px;
