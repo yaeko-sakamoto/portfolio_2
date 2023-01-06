@@ -1263,7 +1263,7 @@ height: calc(100vh - 36px);
 	text-align: center;
 }
 .works_btn p {
-	font-size: 14.5px;
+	font-size: 14px;
 }
 .about {
 	display: block;
@@ -1280,7 +1280,7 @@ height: calc(100vh - 36px);
 	text-align: center;
 }
 .about_btn p {
-	font-size: 14.5px;
+	font-size: 14px;
 }
 .contact {
 	display: block;
@@ -1297,7 +1297,7 @@ height: calc(100vh - 36px);
 	text-align: center;
 }
 .contact_btn_main p {
-	font-size: 14.5px;
+	font-size: 14px;
 }
 .top_btn {
 	right: 30px;
