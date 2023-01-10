@@ -590,8 +590,8 @@ max-width: 2000px;
 margin: 0 auto;
 }
 
-.cp_tabpanel  img {
-    width: 100%; 
+.cp_tabpanel img {
+    width: 70%; 
     padding-right: 60px;
     padding-top: 15%;
 }
