@@ -921,12 +921,15 @@ width: 35%;
 @media screen and (max-width:900px ) {
 	.performance_banner {
 		display: block ;
+		text-align: center;
 	}
 	.cp_tabpanel {
 		display: block ;
+		text-align: center;
 	}
 	.cp_tabpanel img {
     padding-right: 0px;
+	width: 75%;
 	}
 	.cp_tabpanel h2 {
 		padding-bottom: 130px;
